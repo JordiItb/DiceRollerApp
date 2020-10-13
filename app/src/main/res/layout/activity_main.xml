@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/tapestry"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_marginTop="40dp"
+        android:id="@+id/appTitle"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:gravity="center"
+        android:src="@drawable/title"
+        android:layout_weight="0.5"
+        android:contentDescription="Image Title" />
+
+    <Button
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/buttonName"
+        android:id="@+id/appButton"
+        android:textSize="24sp"
+        android:backgroundTint="#FF0000"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reset"
+        android:layout_gravity="center"
+        android:id="@+id/resetButton"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="100">
+        <ImageView
+            android:id="@+id/appResult"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:src="@drawable/empty_dice"
+            android:visibility="invisible"
+            android:clickable="true"
+            android:focusable="true"
+            tools:ignore="NestedWeights" />
+        <ImageView
+            android:id="@+id/appResult2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:src="@drawable/empty_dice"
+            android:visibility="invisible"
+            android:clickable="true"
+            android:focusable="true" />
+    </LinearLayout>
+
+</LinearLayout>

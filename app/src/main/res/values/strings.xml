@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Dice Roller</string>
+    <string name="buttonName">Roll the dice</string>
+    <string name="titleText">ITB Gambling</string>
+</resources>
