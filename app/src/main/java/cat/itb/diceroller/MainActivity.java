@@ -31,57 +31,15 @@ public class MainActivity extends AppCompatActivity {
 
                 rollButton.setText("Dice rolled.");
 
-                int num = (int) Math.floor(Math.random() * 6  + 1);
-                int num2 = (int) Math.floor(Math.random() * 6  + 1);
+                int num = (int) Math.floor(Math.random() * 6);
+                int num2 = (int) Math.floor(Math.random() * 6);
+                int[] opc = {R.drawable.dice_1, R.drawable.dice_2, R.drawable.dice_3, R.drawable.dice_4, R.drawable.dice_5, R.drawable.dice_6};
+                resultImageView.setImageResource(opc[num]);
+                resultImageView2.setImageResource(opc[num2]);
 
                 resultImageView2.setVisibility(View.VISIBLE);
                 resultImageView.setVisibility(View.VISIBLE);
 
-                switch(num){
-
-                    case 1:
-                        resultImageView.setImageResource(R.drawable.dice_1);
-                        break;
-                    case 2:
-                        resultImageView.setImageResource(R.drawable.dice_2);
-                        break;
-                    case 3:
-                        resultImageView.setImageResource(R.drawable.dice_3);
-                        break;
-                    case 4:
-                        resultImageView.setImageResource(R.drawable.dice_4);
-                        break;
-                    case 5:
-                        resultImageView.setImageResource(R.drawable.dice_5);
-                        break;
-                    case 6:
-                        resultImageView.setImageResource(R.drawable.dice_6);
-                        break;
-
-                }
-
-                switch(num2){
-
-                    case 1:
-                        resultImageView2.setImageResource(R.drawable.dice_1);
-                        break;
-                    case 2:
-                        resultImageView2.setImageResource(R.drawable.dice_2);
-                        break;
-                    case 3:
-                        resultImageView2.setImageResource(R.drawable.dice_3);
-                        break;
-                    case 4:
-                        resultImageView2.setImageResource(R.drawable.dice_4);
-                        break;
-                    case 5:
-                        resultImageView2.setImageResource(R.drawable.dice_5);
-                        break;
-                    case 6:
-                        resultImageView2.setImageResource(R.drawable.dice_6);
-                        break;
-
-                }
 
                 if(num == 6 && num2 == 6){
 
@@ -108,30 +66,10 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                int num = (int) Math.floor(Math.random() * 6  + 1);
+                int num = (int) Math.floor(Math.random() * 6);
+                int[] opc = {R.drawable.dice_1, R.drawable.dice_2, R.drawable.dice_3, R.drawable.dice_4, R.drawable.dice_5, R.drawable.dice_6};
+                resultImageView.setImageResource(opc[num]);
 
-                switch(num){
-
-                    case 1:
-                        resultImageView.setImageResource(R.drawable.dice_1);
-                        break;
-                    case 2:
-                        resultImageView.setImageResource(R.drawable.dice_2);
-                        break;
-                    case 3:
-                        resultImageView.setImageResource(R.drawable.dice_3);
-                        break;
-                    case 4:
-                        resultImageView.setImageResource(R.drawable.dice_4);
-                        break;
-                    case 5:
-                        resultImageView.setImageResource(R.drawable.dice_5);
-                        break;
-                    case 6:
-                        resultImageView.setImageResource(R.drawable.dice_6);
-                        break;
-
-                }
 
             }
         });
@@ -140,30 +78,10 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                int num = (int) Math.floor(Math.random() * 6  + 1);
+                int num = (int) Math.floor(Math.random() * 6);
+                int[] opc = {R.drawable.dice_1, R.drawable.dice_2, R.drawable.dice_3, R.drawable.dice_4, R.drawable.dice_5, R.drawable.dice_6};
+                resultImageView2.setImageResource(opc[num]);
 
-                switch(num){
-
-                    case 1:
-                        resultImageView2.setImageResource(R.drawable.dice_1);
-                        break;
-                    case 2:
-                        resultImageView2.setImageResource(R.drawable.dice_2);
-                        break;
-                    case 3:
-                        resultImageView2.setImageResource(R.drawable.dice_3);
-                        break;
-                    case 4:
-                        resultImageView2.setImageResource(R.drawable.dice_4);
-                        break;
-                    case 5:
-                        resultImageView2.setImageResource(R.drawable.dice_5);
-                        break;
-                    case 6:
-                        resultImageView2.setImageResource(R.drawable.dice_6);
-                        break;
-
-                }
 
             }
         });
