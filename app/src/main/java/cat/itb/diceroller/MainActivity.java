@@ -41,7 +41,7 @@ public class MainActivity extends AppCompatActivity {
                 resultImageView.setVisibility(View.VISIBLE);
 
 
-                if(num == 6 && num2 == 6){
+                if(num == 5 && num2 == 5){
 
                     Toast.makeText(MainActivity.this, "JACKOPT!!", Toast.LENGTH_SHORT).show();
 
