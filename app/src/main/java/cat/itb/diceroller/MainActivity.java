@@ -3,6 +3,7 @@ package cat.itb.diceroller;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.view.Gravity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
@@ -43,7 +44,9 @@ public class MainActivity extends AppCompatActivity {
 
                 if(num == 5 && num2 == 5){
 
-                    Toast.makeText(MainActivity.this, "JACKOPT!!", Toast.LENGTH_SHORT).show();
+                    Toast toast = Toast.makeText(MainActivity.this, "JACKOPT!!", Toast.LENGTH_SHORT);
+                    toast.setGravity(Gravity.TOP, Gravity.CENTER, 0);
+                    toast.show();
 
                 }
 
